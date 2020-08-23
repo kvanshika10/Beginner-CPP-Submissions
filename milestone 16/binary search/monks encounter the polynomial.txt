@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+
+int main()
+{
+   ll t;
+   cin >> t;
+   while(t--){
+       ll a,b,c,k,x;
+      cin >> a >> b >> c >> k;
+      for(x=0;x<k;x++)
+      {
+         if(a*x*x+b*x+c>=k)
+           break;
+      }
+      cout << x << endl;
+     
+         }
+   }
+

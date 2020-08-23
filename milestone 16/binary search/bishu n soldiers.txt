@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+
+
+
+int main()
+{
+    ll n;
+    cin >> n;
+    ll a[n];
+     for (int i=0;i<n;i++)
+     {
+         cin >> a[i];
+     }
+     sort(a,a+n);
+     ll q;
+     cin >> q;
+     while (q--)
+     {  
+         ll m,count=0,sum=0;
+         cin >>m;
+         for (int i=0;i<n;i++)
+         {
+             if (a[i]<=m)
+             {
+                 count++;
+                 sum+=a[i];
+             }else
+             break;
+         }           
+       cout << count << " " << sum << endl;
+     }
+}
+
+
+
+

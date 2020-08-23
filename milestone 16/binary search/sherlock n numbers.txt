@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+
+int main()
+{
+        ios_base::sync_with_stdio(false);
+           cin.tie(NULL);
+    ll t;
+    cin >> t;
+    while(t--){
+             ll n,k,p,x=0;
+             cin >> n >> k >>p;
+             
+            ll a[k];
+        
+             for(int i=0;i<k;i++)
+                { 
+                    cin >> a[i];
+                     if(a[i]<=p+x)
+                        x++;
+                }
+                if(p+k<=n)
+                cout << p+x << endl;
+                else cout << "-1" << endl;
+    }
+                 
+
+
+            
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+
+int main()
+{
+    ll n;
+    cin >> n;
+    ll a[n];
+    for (int i=0;i<n;i++)
+    {
+        cin >> a[i];
+    }
+    ll k,result;
+    cin >>k;
+    for (int i=0;i<n;i++)
+    {
+       if (a[i]==k)
+        result =i;
+     }
+
+    
+      cout << result << endl;
+
+    
+
+
+
+
+
+
+
+
+
+}

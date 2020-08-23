@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+#define ll long long int
+ 
+ 
+ 
+int main()
+{
+    ll t;
+    cin >> t;
+    while (t--){
+        ll a,b,c,d,k,t=0;
+        cin >> a >> b >> c >> d >> k;
+        
+            while((a*t*t*t+b*t*t+c*t+d)<k)
+                    t++;
+        if((a*t*t*t+b*t*t+c*t+d)==k)
+            cout << t << endl;
+          else cout << t-1 << endl;
+ 
+ 
+    }
+ 

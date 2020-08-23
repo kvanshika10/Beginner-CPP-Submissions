@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+
+int main()
+{
+     int n;
+     int count=0;
+     cin >> n;
+     while (n--)
+     {
+         double w;
+         double h;
+         double temp;
+         cin >> w >> h;
+           if(w>h)
+           temp=w/h;
+           else temp=h/w;
+    if(temp>=1.60 && temp<=1.70)
+               count++;
+
+     }
+    cout << count;
+
+
+
+
+}
